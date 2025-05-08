@@ -15,11 +15,11 @@ function getCurrentPicNumber() {
 
 function displayPic(newNum) {
   //validate input: it must be between 1 and 4
-  if (newNum < 1 || newNum > 4) return;
+  if (newNum < 1 || newNum > 3) return;
   //calculate distance
   const distance = newNum - getCurrentPicNumber();
   //shift all pics by the distance
-  for (let i = 1; i <= 4; i++) {
+  for (let i = 1; i <= 3; i++) {
     let pic = document.getElementById("pic" + i);
     let leftCssString = getComputedStyle(pic).getPropertyValue("left");
     let leftCssNum = Number(leftCssString.slice(0, leftCssString.length - 2));
