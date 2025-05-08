@@ -33,7 +33,7 @@ function moveLeft() {
   if (currentPicNumber > 1) {
     displayPic(currentPicNumber - 1);
   } else {
-    displayPic(4);
+    displayPic(3);
   }
 }
 
