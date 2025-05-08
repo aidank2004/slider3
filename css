@@ -1,0 +1,60 @@
+#picFrame {
+  position: relative; 
+  overflow: hidden; 
+  margin: 100px auto 0 auto;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  width: 500px;
+  height: 250px;
+  outline: solid 0px black; 
+}
+
+/*Pic divs start*/
+.pic{
+  position: absolute;
+  transition: left 0.3s;
+}
+
+#pic1{
+  left: 0px;
+}
+
+#pic2{
+  left: 1000px;
+}
+
+#pic3{
+  left: 2000px;
+}
+
+/*Pic divs end*/
+
+img{
+  width: 500px;
+}
+
+.arrow{
+  z-index: 2;
+  font-size: 35px;
+  margin: 0px 200px 0 200px;
+  opacity: 20%;
+  padding: 10px;
+  border-radius: 10px;
+  user-select: none;
+}
+
+#picSelector{
+  position: absolute;
+  bottom: 45px;
+  width: fit-content;
+}
+
+#btnDiv{
+  position: absolute;
+  bottom: 15px;
+  display: flex; 
+  justify-content: center;
+  gap: 5px;
+  opacity: 60%;
+}
